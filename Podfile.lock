@@ -1,0 +1,26 @@
+PODS:
+  - Fabric (1.6.7)
+  - QuadratTouch (1.1.1)
+  - SwiftyJSON (2.3.2)
+  - TwitterCore (2.1.1):
+    - Fabric
+  - TwitterKit (2.1.1):
+    - TwitterCore (= 2.1.1)
+
+DEPENDENCIES:
+  - Fabric
+  - QuadratTouch (~> 1.0)
+  - SwiftyJSON
+  - TwitterCore
+  - TwitterKit
+
+SPEC CHECKSUMS:
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
+  QuadratTouch: 296d83c63a4328f6f40af9fc728fe24f0e3b00d4
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TwitterCore: abc46da2bc4b76e2c68a74cd8671a071a8e3abbf
+  TwitterKit: 38232c31f622db1f26a5952436eaa88d10763fd0
+
+PODFILE CHECKSUM: fc6d0ea40231ba91ba8335064e9778aa9951a5e0
+
+COCOAPODS: 1.0.1
