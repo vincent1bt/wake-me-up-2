@@ -17,6 +17,11 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     var newsApi: NewsRequest!
     var twitterApi: TwitterRequest!
     var session: String?
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(self.handleRefresh(_:)) , forControlEvents: .ValueChanged)
+        return refreshControl
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +47,7 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 160.0
         self.tableView.registerClass(TWTRTweetTableViewCell.self, forCellReuseIdentifier: "twitterCell")
+        self.tableView.addSubview(self.refreshControl)
     }
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 2
@@ -103,18 +109,33 @@ class NewsViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func didRecieveAPIResults(news: [News]) {
         dispatch_async(dispatch_get_main_queue()) { 
-            self.news = news
+            self.news.appendContentsOf(news)
             let index = NSIndexSet(index: 0)
             self.tableView.reloadSections(index, withRowAnimation: .Fade)
+            if self.refreshControl.refreshing {
+                self.refreshControl.endRefreshing()
+            }
         }
     }
     
     func didRecieveAPIResults(tweets: [TWTRTweet]) {
-        self.tweets.appendContentsOf(tweets)
-        let index = NSIndexSet(index: 1)
         dispatch_async(dispatch_get_main_queue()) {
+            self.tweets.appendContentsOf(tweets)
+            self.tableView.reloadData()
+            let index = NSIndexSet(index: 1)
             self.tableView.reloadSections(index, withRowAnimation: .Fade)
+            
+            if self.refreshControl.refreshing {
+                self.refreshControl.endRefreshing()
+            }
         }
+    }
+    
+    func handleRefresh(refreshControl: UIRefreshControl) {
+        self.tweets.removeAll(keepCapacity: true)
+        self.news.removeAll(keepCapacity: true)
+        self.newsApi.getNews()
+        self.twitterApi.getTweets()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

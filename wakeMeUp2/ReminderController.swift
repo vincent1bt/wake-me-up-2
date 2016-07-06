@@ -45,7 +45,9 @@ class ReminderController: UIViewController {
         if self.textField.text != self.reminder.valueForKey("title") as? String {
             self.reminder.setValue(self.textField.text, forKey: "title")
         }
-        self.reminder.setValue(self.date!, forKey: "date")
+        if self.date != nil {
+            self.reminder.setValue(self.date!, forKey: "date")
+        }
         self.delegate?.updateReminder(self.reminder)
     }
     
@@ -55,7 +57,7 @@ class ReminderController: UIViewController {
     }
 
     @IBAction func createNotification(sender: UIBarButtonItem) {
-        if self.date != nil && self.textField.text != nil {
+        if self.date != nil || self.textField.text != nil {
             self.updateReminder()
         }
         self.performSegueWithIdentifier("backToremindersSegue", sender: self)

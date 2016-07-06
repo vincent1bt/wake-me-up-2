@@ -173,7 +173,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="riN-eK-7E8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="riN-eK-7E8">
                                 <rect key="frame" x="0.0" y="64" width="600" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="mKK-aN-sar"/>
@@ -182,6 +182,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="122" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fo8-xj-LRZ">
                                 <rect key="frame" x="0.0" y="314" width="600" height="237"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="I1T-bL-33q"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="237" id="SfP-yh-c9P"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="remindersCell" rowHeight="115" id="uxP-Hc-5JL" customClass="ReminderCell" customModule="wakeMeUp2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="115"/>
@@ -228,6 +232,11 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="I1T-bL-33q"/>
+                                    </mask>
+                                </variation>
                             </tableView>
                             <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6QW-uj-t7Q">
                                 <rect key="frame" x="0.0" y="64" width="600" height="250"/>
@@ -268,11 +277,12 @@
                                 <constraints>
                                     <constraint firstItem="v1C-I7-89X" firstAttribute="top" secondItem="lqr-wL-DDk" secondAttribute="bottom" constant="-15.5" id="Naa-Km-vtA"/>
                                     <constraint firstItem="v1C-I7-89X" firstAttribute="centerX" secondItem="6QW-uj-t7Q" secondAttribute="centerX" id="QsK-q2-jzw"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="UcE-MQ-Wmj"/>
                                     <constraint firstItem="v1C-I7-89X" firstAttribute="centerY" secondItem="6QW-uj-t7Q" secondAttribute="centerY" id="b2d-Y3-CDf"/>
                                     <constraint firstItem="Dj3-hp-Uyj" firstAttribute="centerX" secondItem="lqr-wL-DDk" secondAttribute="centerX" id="cG6-OY-zDN"/>
                                     <constraint firstItem="lqr-wL-DDk" firstAttribute="centerX" secondItem="v1C-I7-89X" secondAttribute="centerX" id="ciR-Ma-dLz"/>
                                     <constraint firstItem="lqr-wL-DDk" firstAttribute="top" secondItem="Dj3-hp-Uyj" secondAttribute="bottom" constant="1" id="kMG-6F-JY1"/>
-                                    <constraint firstAttribute="height" constant="250" id="waf-f7-UCo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="250" id="waf-f7-UCo"/>
                                 </constraints>
                             </view>
                         </subviews>

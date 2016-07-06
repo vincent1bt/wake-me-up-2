@@ -68,10 +68,10 @@ class ReminderViewController: UIViewController, UITableViewDelegate, UITableView
         cell.createCell = createCell
         cell.accessoryType = createCell ? .None : .DetailButton
         cell.textField.tag = indexPath.row
+        cell.textField.text = ""
+        cell.dateLabel.text = ""
         
         if createCell {
-            cell.textField.text = ""
-            cell.dateLabel.text = ""
             return cell
         }
         
@@ -192,6 +192,7 @@ class ReminderViewController: UIViewController, UITableViewDelegate, UITableView
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "reminderSegue" {
             let view = segue.destinationViewController.childViewControllers.first as! ReminderController
+            view.delegate = self
             view.reminder = self.reminders[self.rowIndex]
         }
     }

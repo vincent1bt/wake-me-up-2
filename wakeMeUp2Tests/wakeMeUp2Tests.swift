@@ -8,9 +8,15 @@
 
 import XCTest
 import MapKit
+
 @testable import wakeMeUp2
 
 class wakeMeUp2Tests: XCTestCase {
+    
+    let newsApi: NewsRequest = NewsRequest()
+    let twitterApi: TwitterRequest = TwitterRequest()
+    let weatherApi: WeatherRequest = WeatherRequest()
+    let location = CLLocation(latitude: CLLocationDegrees(19.4993813631165) , longitude: CLLocationDegrees(-96.8489498739627))
     
     override func setUp() {
         super.setUp()
@@ -23,8 +29,7 @@ class wakeMeUp2Tests: XCTestCase {
     }
     
     func testPlacesApi() {
-        let location = CLLocation(latitude: CLLocationDegrees(19.4993813631165) , longitude: CLLocationDegrees(-96.8489498739627))
-        FoursquareRequest.sharedInstance.unwrapData(location) { (places, annotations) in
+        FoursquareRequest.sharedInstance.unwrapData(self.location) { (places, annotations) in
             XCTAssertNotNil(places, "Places are nil")
             XCTAssertNotNil(annotations, "Annotations are nil")
             let place = places[0]
@@ -34,9 +39,31 @@ class wakeMeUp2Tests: XCTestCase {
         }
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testNewsApi() {
+        self.newsApi.unwrapData { (news, error) in
+            XCTAssertNil(error, "Error is not nilm newsApi")
+            XCTAssertNotNil(news, "News are nil")
+            let new = news![0]
+            XCTAssertNotNil(new.title, "Title is nil")
+            XCTAssertNotNil(new.date, "Date is nil")
+        }
+    }
+    
+    func testTwitterApi() {
+        self.twitterApi.unwrapData { (tweets) in
+            XCTAssertNotNil(tweets, "Tweets are nil")
+            let tweet = tweets[0]
+            XCTAssertNotNil(tweet.author, "Tweet author is nil")
+        }
+    }
+    
+    func testWeatherApi() {
+        self.weatherApi.unwrapData(self.location) { (weather, error) in
+            XCTAssertNil(error, "Error is not nil, weatherApi")
+            XCTAssertNotNil(weather, "Weather is nil")
+            XCTAssertNotNil(weather.description, "Description weather is nil")
+            
+        }
     }
     
     func testPerformanceExample() {
