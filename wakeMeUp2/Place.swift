@@ -10,13 +10,13 @@ import Foundation
 import MapKit
 
 struct Place {
-    var id: String?
-    var name: String?
-    var longitude: Float?
-    var latitude: Float?
-    var adress: String?
+    var id: String = "No Id"
+    var name: String = "No name"
+    var longitude: Float = 0.0
+    var latitude: Float = 0.0
+    var address: String = "No address"
     
     var coordinate: CLLocationCoordinate2D {
-        return CLLocationCoordinate2D(latitude: Double(self.latitude!), longitude: Double(self.longitude!))
+        return CLLocationCoordinate2D(latitude: Double(self.latitude), longitude: Double(self.longitude))
     }
 }

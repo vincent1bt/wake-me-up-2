@@ -7,29 +7,50 @@
 //
 
 import UIKit
+import TwitterKit
+
+protocol ConfigurationProtocol {
+    func reloadedTwitterSession(logIn: Bool)
+}
 
 class ConfigurationViewController: UIViewController {
 
+    @IBOutlet weak var logInButton: UIButton!
+    var session: String?
+    var delegate: ConfigurationProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configTwitter()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func configTwitter() {
+        self.session = Twitter.sharedInstance().sessionStore.session()?.userID
+        let buttonTitle = (session != nil) ? "  Cerrar sesion" : "  Iniciar sesion"
+        self.logInButton.setTitle(buttonTitle, forState: .Normal)
     }
-    */
+    
+    @IBAction func logIn(sender: UIButton) {
+        if session != nil {
+            let store = Twitter.sharedInstance().sessionStore
+            let UserID = store.session()?.userID
+            store.logOutUserID(UserID!)
+            self.delegate?.reloadedTwitterSession(false)
+            self.logInButton.setTitle(" Iniciar sesion", forState: .Normal)
+        }
+        if session == nil {
+            Twitter.sharedInstance().logInWithCompletion({ (session, error) in
+                guard error == nil else {
+                    return
+                }
+                self.delegate?.reloadedTwitterSession(true)
+                self.logInButton.setTitle(" Cerrar sesion", forState: .Normal)
+            })
+        }
+    }
 
 }

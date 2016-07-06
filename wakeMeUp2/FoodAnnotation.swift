@@ -11,9 +11,9 @@ import MapKit
 
 
 class FoodAnnotation: NSObject, MKAnnotation {
-    let title: String?
-    let subtitle: String?
-    let coordinate: CLLocationCoordinate2D
+    var title: String?
+    var subtitle: String?
+    var coordinate: CLLocationCoordinate2D
     
     init(title: String, subtitle: String, coordinate: CLLocationCoordinate2D) {
         self.title = title

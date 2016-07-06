@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import MapKit
 @testable import wakeMeUp2
 
 class wakeMeUp2Tests: XCTestCase {
@@ -19,6 +20,18 @@ class wakeMeUp2Tests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
+    }
+    
+    func testPlacesApi() {
+        let location = CLLocation(latitude: CLLocationDegrees(19.4993813631165) , longitude: CLLocationDegrees(-96.8489498739627))
+        FoursquareRequest.sharedInstance.unwrapData(location) { (places, annotations) in
+            XCTAssertNotNil(places, "Places are nil")
+            XCTAssertNotNil(annotations, "Annotations are nil")
+            let place = places[0]
+            let annotation = annotations[0]
+            XCTAssertNotEqual(place.id, "No Id")
+            XCTAssertNotNil(annotation.title, "The first annotation do not have data")
+        }
     }
     
     func testExample() {

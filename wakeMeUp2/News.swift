@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+struct News {
+    var title: String?
+    var date: String?
+    var image: NSData?
+    var content: String?
+}

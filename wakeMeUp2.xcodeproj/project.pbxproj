@@ -7,14 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0D43B51D235DDA0012372B /* FoursquareRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0D43B41D235DDA0012372B /* FoursquareRequest.swift */; };
 		BF1DF7A31D209E9A00F299F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DF7A21D209E9A00F299F7 /* AppDelegate.swift */; };
-		BF1DF7A51D209E9A00F299F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DF7A41D209E9A00F299F7 /* ViewController.swift */; };
+		BF1DF7A51D209E9A00F299F7 /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DF7A41D209E9A00F299F7 /* ReminderViewController.swift */; };
 		BF1DF7A81D209E9A00F299F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1DF7A61D209E9A00F299F7 /* Main.storyboard */; };
 		BF1DF7AB1D209E9A00F299F7 /* wakeMeUp2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF1DF7A91D209E9A00F299F7 /* wakeMeUp2.xcdatamodeld */; };
 		BF1DF7AD1D209E9A00F299F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF1DF7AC1D209E9A00F299F7 /* Assets.xcassets */; };
 		BF1DF7B01D209E9A00F299F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1DF7AE1D209E9A00F299F7 /* LaunchScreen.storyboard */; };
 		BF1DF7BB1D209E9A00F299F7 /* wakeMeUp2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DF7BA1D209E9A00F299F7 /* wakeMeUp2Tests.swift */; };
 		BF1DF7C61D209E9B00F299F7 /* wakeMeUp2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1DF7C51D209E9B00F299F7 /* wakeMeUp2UITests.swift */; };
+		BF4AD5111D24490B0031AAF4 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF4AD5101D24490B0031AAF4 /* Keys.swift */; };
+		BF86D1171D29FD9700A5189F /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF86D1161D29FD9700A5189F /* Weather.swift */; };
+		BF93AD231D2C87CD003B73D6 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF93AD221D2C87CD003B73D6 /* ConfigurationViewController.swift */; };
+		BFA5F4361D21F7190016ABB1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5F4351D21F7190016ABB1 /* MapViewController.swift */; };
+		BFA5F4381D21F7260016ABB1 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFA5F4371D21F7260016ABB1 /* NewsViewController.swift */; };
+		BFC276C31D24431C003E69F4 /* FoodAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC276C21D24431C003E69F4 /* FoodAnnotation.swift */; };
+		BFC276C51D244388003E69F4 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC276C41D244388003E69F4 /* Place.swift */; };
+		BFCB08281D288CB400A45FE0 /* TwitterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCB08271D288CB400A45FE0 /* TwitterRequest.swift */; };
+		BFD43A251D2997C000C2547A /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD43A241D2997C000C2547A /* WeatherRequest.swift */; };
+		BFD43A271D29AD0900C2547A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD43A261D29AD0900C2547A /* Request.swift */; };
+		BFD7AFCC1D26D18D00DCB120 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7AFCB1D26D18D00DCB120 /* NewsCell.swift */; };
+		BFD7AFCE1D26D2A400DCB120 /* NewsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7AFCD1D26D2A400DCB120 /* NewsRequest.swift */; };
+		BFD7AFD01D26D54C00DCB120 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7AFCF1D26D54C00DCB120 /* News.swift */; };
+		BFE0D5FE1D2AE2D800CCF916 /* ReminderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0D5FD1D2AE2D800CCF916 /* ReminderCell.swift */; };
+		BFE0D6001D2AF0E200CCF916 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0D5FF1D2AF0E200CCF916 /* Reminders.swift */; };
+		BFE0D6021D2B22A300CCF916 /* ReminderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0D6011D2B22A300CCF916 /* ReminderController.swift */; };
+		BFE0D6041D2B2FE800CCF916 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFE0D6031D2B2FE800CCF916 /* Utils.swift */; };
+		C51557432FEA92DA46D8A1E9 /* Pods_wakeMeUp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FFEA6827DD95FE7E8FDEAAC /* Pods_wakeMeUp2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09AC810007B97A5B270DB67E /* Pods-wakeMeUp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeMeUp2.release.xcconfig"; path = "Pods/Target Support Files/Pods-wakeMeUp2/Pods-wakeMeUp2.release.xcconfig"; sourceTree = "<group>"; };
+		4FFEA6827DD95FE7E8FDEAAC /* Pods_wakeMeUp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wakeMeUp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CE92EE41BBFCE2184237E0 /* Pods-wakeMeUp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wakeMeUp2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wakeMeUp2/Pods-wakeMeUp2.debug.xcconfig"; sourceTree = "<group>"; };
+		BF0D43B41D235DDA0012372B /* FoursquareRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareRequest.swift; sourceTree = "<group>"; };
 		BF1DF79F1D209E9A00F299F7 /* wakeMeUp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wakeMeUp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1DF7A21D209E9A00F299F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BF1DF7A41D209E9A00F299F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF1DF7A41D209E9A00F299F7 /* ReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
 		BF1DF7A71D209E9A00F299F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF1DF7AA1D209E9A00F299F7 /* wakeMeUp2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wakeMeUp2.xcdatamodel; sourceTree = "<group>"; };
 		BF1DF7AC1D209E9A00F299F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +72,23 @@
 		BF1DF7C11D209E9B00F299F7 /* wakeMeUp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wakeMeUp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1DF7C51D209E9B00F299F7 /* wakeMeUp2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wakeMeUp2UITests.swift; sourceTree = "<group>"; };
 		BF1DF7C71D209E9B00F299F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF4AD5101D24490B0031AAF4 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		BF86D1161D29FD9700A5189F /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		BF93AD221D2C87CD003B73D6 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		BFA5F4351D21F7190016ABB1 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		BFA5F4371D21F7260016ABB1 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		BFC276C21D24431C003E69F4 /* FoodAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodAnnotation.swift; sourceTree = "<group>"; };
+		BFC276C41D244388003E69F4 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		BFCB08271D288CB400A45FE0 /* TwitterRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterRequest.swift; sourceTree = "<group>"; };
+		BFD43A241D2997C000C2547A /* WeatherRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
+		BFD43A261D29AD0900C2547A /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BFD7AFCB1D26D18D00DCB120 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		BFD7AFCD1D26D2A400DCB120 /* NewsRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsRequest.swift; sourceTree = "<group>"; };
+		BFD7AFCF1D26D54C00DCB120 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		BFE0D5FD1D2AE2D800CCF916 /* ReminderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderCell.swift; sourceTree = "<group>"; };
+		BFE0D5FF1D2AF0E200CCF916 /* Reminders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
+		BFE0D6011D2B22A300CCF916 /* ReminderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderController.swift; sourceTree = "<group>"; };
+		BFE0D6031D2B2FE800CCF916 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C51557432FEA92DA46D8A1E9 /* Pods_wakeMeUp2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +117,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C5C8DD5DEA1C2D17D8D8A24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FFEA6827DD95FE7E8FDEAAC /* Pods_wakeMeUp2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		968EB1A17A08E5E84A329C99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4CE92EE41BBFCE2184237E0 /* Pods-wakeMeUp2.debug.xcconfig */,
+				09AC810007B97A5B270DB67E /* Pods-wakeMeUp2.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF0D43B31D235DC60012372B /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				BF0D43B41D235DDA0012372B /* FoursquareRequest.swift */,
+				BFD7AFCD1D26D2A400DCB120 /* NewsRequest.swift */,
+				BFCB08271D288CB400A45FE0 /* TwitterRequest.swift */,
+				BFD43A241D2997C000C2547A /* WeatherRequest.swift */,
+				BFD43A261D29AD0900C2547A /* Request.swift */,
+				BFE0D5FF1D2AF0E200CCF916 /* Reminders.swift */,
+				BFE0D6031D2B2FE800CCF916 /* Utils.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
 		BF1DF7961D209E9A00F299F7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +155,8 @@
 				BF1DF7B91D209E9A00F299F7 /* wakeMeUp2Tests */,
 				BF1DF7C41D209E9B00F299F7 /* wakeMeUp2UITests */,
 				BF1DF7A01D209E9A00F299F7 /* Products */,
+				968EB1A17A08E5E84A329C99 /* Pods */,
+				6C5C8DD5DEA1C2D17D8D8A24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +173,12 @@
 		BF1DF7A11D209E9A00F299F7 /* wakeMeUp2 */ = {
 			isa = PBXGroup;
 			children = (
-				BF1DF7A21D209E9A00F299F7 /* AppDelegate.swift */,
-				BF1DF7A41D209E9A00F299F7 /* ViewController.swift */,
+				BFD7AFCA1D26D16300DCB120 /* ConfigFiles */,
+				BFC276C11D2442F0003E69F4 /* Models */,
+				BF0D43B31D235DC60012372B /* Api */,
+				BFA5F4341D21F6EF0016ABB1 /* Controllers */,
 				BF1DF7A61D209E9A00F299F7 /* Main.storyboard */,
-				BF1DF7AC1D209E9A00F299F7 /* Assets.xcassets */,
 				BF1DF7AE1D209E9A00F299F7 /* LaunchScreen.storyboard */,
-				BF1DF7B11D209E9A00F299F7 /* Info.plist */,
-				BF1DF7A91D209E9A00F299F7 /* wakeMeUp2.xcdatamodeld */,
 			);
 			path = wakeMeUp2;
 			sourceTree = "<group>";
@@ -128,6 +201,43 @@
 			path = wakeMeUp2UITests;
 			sourceTree = "<group>";
 		};
+		BFA5F4341D21F6EF0016ABB1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF1DF7A41D209E9A00F299F7 /* ReminderViewController.swift */,
+				BFA5F4351D21F7190016ABB1 /* MapViewController.swift */,
+				BFA5F4371D21F7260016ABB1 /* NewsViewController.swift */,
+				BFE0D6011D2B22A300CCF916 /* ReminderController.swift */,
+				BF93AD221D2C87CD003B73D6 /* ConfigurationViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BFC276C11D2442F0003E69F4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BF1DF7A91D209E9A00F299F7 /* wakeMeUp2.xcdatamodeld */,
+				BFC276C21D24431C003E69F4 /* FoodAnnotation.swift */,
+				BFC276C41D244388003E69F4 /* Place.swift */,
+				BFD7AFCF1D26D54C00DCB120 /* News.swift */,
+				BF86D1161D29FD9700A5189F /* Weather.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		BFD7AFCA1D26D16300DCB120 /* ConfigFiles */ = {
+			isa = PBXGroup;
+			children = (
+				BF1DF7A21D209E9A00F299F7 /* AppDelegate.swift */,
+				BF4AD5101D24490B0031AAF4 /* Keys.swift */,
+				BFD7AFCB1D26D18D00DCB120 /* NewsCell.swift */,
+				BFE0D5FD1D2AE2D800CCF916 /* ReminderCell.swift */,
+				BF1DF7B11D209E9A00F299F7 /* Info.plist */,
+				BF1DF7AC1D209E9A00F299F7 /* Assets.xcassets */,
+			);
+			name = ConfigFiles;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +245,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF1DF7CA1D209E9B00F299F7 /* Build configuration list for PBXNativeTarget "wakeMeUp2" */;
 			buildPhases = (
+				361462CD53AD3FFFEBC624C0 /* [CP] Check Pods Manifest.lock */,
 				BF1DF79B1D209E9A00F299F7 /* Sources */,
 				BF1DF79C1D209E9A00F299F7 /* Frameworks */,
 				BF1DF79D1D209E9A00F299F7 /* Resources */,
+				A8A7583A930D5E62C7678DB7 /* [CP] Embed Pods Frameworks */,
+				5EB51A0A3FB83AFC313CC9C6 /* [CP] Copy Pods Resources */,
+				BFCB08291D289D0C00A45FE0 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -257,14 +371,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		361462CD53AD3FFFEBC624C0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5EB51A0A3FB83AFC313CC9C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wakeMeUp2/Pods-wakeMeUp2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8A7583A930D5E62C7678DB7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wakeMeUp2/Pods-wakeMeUp2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFCB08291D289D0C00A45FE0 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" c75f94c7e0f3562255b51bf62c1ab16e3efa0a9d 643cb43037a95c456294bd0a92ab9a6d512da2222c40322ab1e2cb5e9c4009c1";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF1DF79B1D209E9A00F299F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF1DF7A51D209E9A00F299F7 /* ViewController.swift in Sources */,
+				BFE0D6021D2B22A300CCF916 /* ReminderController.swift in Sources */,
+				BFE0D5FE1D2AE2D800CCF916 /* ReminderCell.swift in Sources */,
+				BF4AD5111D24490B0031AAF4 /* Keys.swift in Sources */,
+				BF1DF7A51D209E9A00F299F7 /* ReminderViewController.swift in Sources */,
+				BFE0D6001D2AF0E200CCF916 /* Reminders.swift in Sources */,
+				BFC276C31D24431C003E69F4 /* FoodAnnotation.swift in Sources */,
+				BF0D43B51D235DDA0012372B /* FoursquareRequest.swift in Sources */,
+				BFCB08281D288CB400A45FE0 /* TwitterRequest.swift in Sources */,
+				BFD7AFCC1D26D18D00DCB120 /* NewsCell.swift in Sources */,
+				BFD43A251D2997C000C2547A /* WeatherRequest.swift in Sources */,
+				BFD43A271D29AD0900C2547A /* Request.swift in Sources */,
+				BF93AD231D2C87CD003B73D6 /* ConfigurationViewController.swift in Sources */,
+				BF86D1171D29FD9700A5189F /* Weather.swift in Sources */,
 				BF1DF7AB1D209E9A00F299F7 /* wakeMeUp2.xcdatamodeld in Sources */,
+				BFD7AFD01D26D54C00DCB120 /* News.swift in Sources */,
+				BFD7AFCE1D26D2A400DCB120 /* NewsRequest.swift in Sources */,
+				BFE0D6041D2B2FE800CCF916 /* Utils.swift in Sources */,
 				BF1DF7A31D209E9A00F299F7 /* AppDelegate.swift in Sources */,
+				BFA5F4381D21F7260016ABB1 /* NewsViewController.swift in Sources */,
+				BFA5F4361D21F7190016ABB1 /* MapViewController.swift in Sources */,
+				BFC276C51D244388003E69F4 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +600,7 @@
 		};
 		BF1DF7CB1D209E9B00F299F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4CE92EE41BBFCE2184237E0 /* Pods-wakeMeUp2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wakeMeUp2/Info.plist;
@@ -417,6 +612,7 @@
 		};
 		BF1DF7CC1D209E9B00F299F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09AC810007B97A5B270DB67E /* Pods-wakeMeUp2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wakeMeUp2/Info.plist;
@@ -491,6 +687,7 @@
 				BF1DF7CC1D209E9B00F299F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF1DF7CD1D209E9B00F299F7 /* Build configuration list for PBXNativeTarget "wakeMeUp2Tests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +696,7 @@
 				BF1DF7CF1D209E9B00F299F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF1DF7D01D209E9B00F299F7 /* Build configuration list for PBXNativeTarget "wakeMeUp2UITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +705,7 @@
 				BF1DF7D21D209E9B00F299F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
